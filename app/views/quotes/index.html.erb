@@ -1,6 +1,9 @@
 <main class="container">
   <div class="header">
     <h1>Quotes</h1>
+
+      <%= turbo_stream_from "quotes" %>
+
     <%= link_to "New quote",
                 new_quote_path,
                 class: "btn btn--primary",

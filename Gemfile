@@ -1,6 +1,11 @@
 source "https://rubygems.org"
 git_source(:github) { |repo| "https://github.com/#{repo}.git" }
 
+
+
+gem 'redis-namespace'
+gem 'redis-rails'
+
 ruby "3.0.2"
 
 gem "turbo-rails", "~> 1.0"
@@ -35,7 +40,7 @@ gem "cssbundling-rails"
 gem "jbuilder"
 
 # Use Redis adapter to run Action Cable in production
-# gem "redis", "~> 4.0"
+gem "redis", "~> 4.0"
 
 # Use Kredis to get higher-level data types in Redis [https://github.com/rails/kredis]
 # gem "kredis"
